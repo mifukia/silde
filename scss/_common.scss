@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body{
+	font-family:$font-family;
+}
+
+img{
+	width:100%;
+	vertical-align:middle;
+	@include pc{
+		width:auto;
+	}
+}
+a{
+	img{
+		&:hover{
+			opacity:0.8;
+		}
+	}
+}
+.alpha{
+	opacity:1;
+	&:hover{
+		opacity:0.8;
+	}
+}
+.sp{
+	display:block;
+	@include pc{
+		display:none !important;
+	}
+}
+.pc{
+	display:none;
+	@include pc{
+		display:block;
+	}
+}
+.d-none{
+	display:none;
+}
+.d-block{
+	display:block;
+}
